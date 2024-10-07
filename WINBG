@@ -1,0 +1,57 @@
+import mayflower.*;
+import java.util.Random;
+public class WinBG extends AnimatedActor
+{
+
+    //private String[] frames; // Array to hold the frame file names
+    //private Random random;   // Random number generator
+    //private String currentFrame; // To hold the currently displayed frame
+     public WinBG(){
+        String [] frames = new String[5];
+        for (int i = 0; i < frames.length; i++){
+            int index = i+1;
+            System.out.println(frames[i]+"Sprites/Win/win(" + index + ").png");
+            frames[i] = "Sprites/Win/win(" + index + ").png";
+            System.out.println("Win "+frames[i]);
+        
+        }
+    }
+    
+    /* public WinBG() {
+        frames = new String[5]; 
+        random = new Random(); 
+
+       
+        for (int i = 0; i < frames.length; i++) {
+            int index = i + 1;
+            frames[i] = "Sprites/Win/win(" + index + ").png";
+            System.out.println("Win " + frames[i]); // Debug output to verify paths
+        }
+
+       
+        setFrames(frames);
+        
+        // Display a random frame
+        int randomIndex = random.nextInt(frames.length);
+        setFrame(randomIndex); // Set a random frame to be displayed
+    }
+
+   
+    public void setFrames(String[] frames) {
+        this.frames = frames; // Assign the provided frames to the class variable
+    }
+
+
+    public void setFrame(int index) {
+        index = 5;
+        if (index >= 0 && index < frames.length) {
+            currentFrame = frames[index]; // Set the current frame
+            System.out.println("Current frame set to: " + currentFrame); // Debug output
+            // Here you could add additional code to actually display the frame
+        } else {
+            System.out.println("Index out of bounds: " + index); // Error handling
+        }
+    }*/
+}
+
+
